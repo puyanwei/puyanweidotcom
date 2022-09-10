@@ -1,11 +1,10 @@
-import './styles/globals.css'
+import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className='text-gray-700'>
+    <div className='grid mx-auto max-w-[1200px]'>
       <Component {...pageProps} />
-      HELLO FROM APP
     </div>
   )
 }
